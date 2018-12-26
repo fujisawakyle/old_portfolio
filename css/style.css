@@ -1,0 +1,300 @@
+body {
+	background-color:white;
+}
+main {
+	font-family: 'Quicksand', sans-serif;
+}
+#homeSection {
+width:100%;
+}
+#homeSection h1 {
+	font-size:6em;
+	font-weight:bold;
+	color: #000;
+	width:60%;
+	margin: auto;
+}
+#homeSection h2 {
+	font-size:1.5em;
+	width:82%;
+	margin:auto;
+}
+.leftBar {
+	width:80px;
+	height:100%;
+	background:white;
+	position:fixed;
+	margin:0;
+	top:0;
+	box-shadow: 1px 1px 5px #7d808d;
+	z-index: 2;
+	border-collapse:collapse;
+	display: table;
+}
+.leftBar .logo {
+	margin-top: 10%;
+	width:100%;
+	transition-property: padding;
+	transition-duration: .1s;
+	transition-timing-function: linear;
+}
+.leftBar .logo:hover {
+	padding:6%;
+}
+.menuButton i:hover {
+	font-size:0.9em;
+	position:absolute;
+	left:24.75px;
+	top:101.5px;
+}
+main {
+	transform:translate(80px,0);
+}
+#contactTable {
+	display: table-row;
+	vertical-align : bottom;
+	height:0;
+	text-align: center;
+	margin-bottom:5px;
+}
+#contactTable a{
+	background:white;
+	font-size:3em;
+	float:;
+	margin-bottom:3em;
+	padding:10%;
+}
+#email {
+	padding:10%;
+}
+#contactTable img:hover{
+	width:45px;
+}
+#contactTable img {
+	width:50px;
+	transition-property: width;
+	transition-duration: .1s;
+	transition-timing-function: linear;
+}
+.menuButton {
+	font-size:2.9em;
+	text-align: center;
+	margin:0;
+	display:inline-block;
+	margin-top:0;
+	color:#003db1;;
+	padding:0.2em;
+	width:100%;
+	transition-property: font-size;
+	transition-duration: .1s;
+	transition-timing-function: linear;
+}
+#drawer {
+	margin: 0;
+	position:fixed;
+	background-color: white;
+	transform:translateX(-48%);		
+	transition:transform 0.4s ease;
+	font-family: 'Glegoo', serif;
+	font-size: 20px;
+	color:black;
+	z-index: 1;
+	border-radius:5%;
+	border: 1px solid blue;
+	box-shadow: 1px 1px 5px #7d808d;
+}
+#drawer.open {
+	transform:translate(36%,0);
+
+	position:fixed;
+	background:white;
+}
+#drawer li{
+	list-style-type: none;
+	padding-right: .5em;
+	padding-top:.5em;
+	margin:2px;;
+	text-align:right;
+	display:block;
+	background:white;
+	color:yellow;
+	border-radius: 5%;
+	transition:transform 0.3s ease;
+}
+
+
+@media screen and (max-width:550px) {
+	
+#homeSection img {
+	width:80%;
+	text-align: center;
+}
+#homeSection h1 {
+	font-size:3em;
+	text-align: center;
+	display:inline-block;
+	line-height: 1.5em;
+	width:80%;
+	margin:0;
+}
+#homeSection h2 {
+	font-size:0.9em;
+	text-align: center;
+	width:80%;
+	padding-left:10%;
+	padding-right:10%;
+	margin:0;
+}
+#projectsSection {
+	text-align: center;
+	width:80%;
+	margin:0;
+}
+#projectsSection img{
+	width:90%;
+	margin:2%;
+	border-radius:2%
+}
+#aboutSection {
+  position:relative;
+	width:80%;
+	text-align: center;
+}
+#headshot {
+  width: 80%;
+	padding:0;
+	margin:0;
+	border-radius:50%;
+}
+#aboutSection p {
+	width:80%;
+	margin-top:0;
+	padding:5% 3% 5% 3%;
+	display: inline-block;
+	vertical-align: middle;
+}
+#footerSection{
+  width:80%;
+	text-align:center;
+
+}
+#footerSection p {
+	width:100%;
+}
+}
+
+@media screen and (min-width:551px) and (max-width:959px) {
+#homeSection{
+	width:calc(100% - 80px);
+	text-align: center;
+}
+#homeSection h1{
+	width:100%;
+	text-align: center;
+	font-size: 5em;
+}
+#projectsSection {
+	text-align: center;
+	width:calc(100% - 80px);
+	margin:0;
+}
+#projectsSection img{
+	width:200px;
+	height:289px;
+	display:inline-block;
+	flex-wrap:wrap;
+	margin:0.5%;
+	border-radius:2%
+}
+#aboutSection {
+	position:relative;
+	width:calc(100% - 80px);
+	text-align: center;
+}
+#headshot {
+  width: 50%;
+	padding:0;
+	margin:0;
+	border-radius:50%;
+	display: inline-block;
+	line-height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+}
+#aboutSection p {
+	width:40%;
+	margin-top:0;
+	padding:5% 3% 5% 3%;
+	display: inline-block;
+	line-height: 1.5em;
+	vertical-align: middle;
+}
+#footerSection{
+	width:calc(100% - 80px);
+	text-align:center;
+	margin:3%;
+}
+#footerSection p {
+	width:100%;
+}	
+}
+
+
+@media screen and (min-width:960px) {
+main {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+#homeSection{
+	width:calc(100% - 80px);
+	text-align: center;
+}
+#homeSection h1{
+	text-align: center;
+}
+#projectsSection {
+	text-align: center;
+	width:calc(100% - 80px);
+	margin:0;
+}
+#projectsSection img{
+	width:230px;
+	height:320px;
+	display:inline-block;
+	flex-wrap:wrap;
+	margin:0.5%;
+	border-radius:2%
+}
+#aboutSection {
+	position:relative;
+	width:calc(100% - 80px);
+}
+#headshot {
+  width: 50%;
+	padding:0;
+	margin:0;
+	border-radius:50%;
+	display: inline-block;
+	line-height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+}
+#aboutSection p {
+	width:35%;
+	margin-top:0;
+	padding:5% 3% 5% 3%;
+	display: inline-block;
+	line-height: 1.5em;
+	vertical-align: middle;
+	text-align: left;
+}
+#footerSection{
+	width:calc(100% - 80px);
+	text-align:center;
+	margin:3%;
+}
+#footerSection p {
+	width:100%;
+}	
+}

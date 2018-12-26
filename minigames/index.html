@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+
+    <title>Mini Games</title>
+ 
+		<meta name=“viewport” content=“width:device-width, initial-scale=0.9”>
+    <link rel ="stylesheet" href="css/style.css" type="text/css"/>
+		<link rel ="stylesheet" href="simon/css/style.css" type="text/css"/>
+		<link rel ="stylesheet" href="tictactoe/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link 
+		rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Glegoo|Electrolize|Architects Daughter|Amatic SC|Julius+Sans+One|Bungee Outline|Barrio|Quicksand" rel="stylesheet">
+    <audio id = "greenSound" src="simon/sounds/C.mp3"></audio>
+		<audio id = "redSound" src="simon/sounds/G.mp3"></audio>
+		<audio id = "blueSound" src="simon/sounds/A.mp3"></audio>
+		<audio id = "yellowSound" src="simon/sounds/B.mp3"></audio>
+		<audio id = "buzzerSound" src="simon/sounds/ch.mp3"></audio>
+	 	<audio id = "winnerSound" src="simon/sounds/winner.wav"></audio>
+</head>
+
+<body>
+	<nav id="drawer" class="gameNav">
+				<li>
+					<div class="gameNav" id="tttToggle">Tic Tac Toe</div>
+				</li>
+        <li>
+					<div class="gameNav" id=simonToggle>SIMON</div>
+				</li>
+	</nav>
+	<div id="topBar">
+		
+		<a href="http://fujisawakyle.com"><img class="logo" src="logo/transparentKF.png" alt="kyle fujisawa logo"></a>
+		
+		<div id="allToggle">All Games</div>
+		
+	</div>
+	
+		
+			
+<main>
+	<div id="headerShift"></div>
+  <div id ="mainSection">
+		<div id = "allGames">
+			<div id='allGamesTitle'>All Games</div>
+			<ul class="photo-grid">
+				<li id="tttGame">
+					<div class="relative">
+					<img 	 
+						 id="tictactoeGame"
+						 src="projectsImages/tttSS.png" alt="Tic Tac Toe project screenshot">
+						<div class="absoluteText TTTText">
+							<h3>Tic Tac Toe</h3>
+							<h5>Match three in a row, column, or diagonal to win!</h5>
+						</div>
+					</div>
+				</li>
+				<li id="simonGame">
+					<div class="relative">
+						<img 
+							 
+							 src="projectsImages/simonSS.png" alt="Simon project screenshot">
+						<div class="absoluteText simonText">
+							<h3>Simon</h3>
+							<h5>Make it through 20 rounds to win!</h5>
+							<h6>Enable strict mode for an extra challenge!</h6>
+							
+						</div>
+					</div>	
+				</li>
+					
+			</ul>
+		</div>
+		<div id = "simonContainer">
+		<div id = "deviceOuter">
+			
+			
+			
+			<div id = "green" class = color></div>
+			<div id = "red" class = color></div>
+			<div id = "blue" class = color></div>
+			<div id = "yellow" class = color></div>
+			<div id ="buttonDisabler"></div>
+			<div id = "deviceInner2"></div>
+			<div id = "deviceInner1">s<span style="padding:1px;font-size:0.725em; font-weight:500;">I</span>mon</div>
+			<div id = "startButtonShadow"></div>
+			<div id = "startButton"></div>
+			<div id = "startText">start</div>
+			<div id = "strictButtonShadow"></div>
+			<div id = "strictButton" class = "OFF"></div>
+			<div id = "strictText">strict</div>
+			<div id = "strictLight"></div>
+			<div id = "screen"></div>
+		</div>
+		</div>	
+		
+		
+		
+		<div id ="tictactoeContainer">
+			<div id = "promptOuter"></div>
+			<div id = "mainBox">
+				<div id ="outerBox"></div>
+				<button class = "square" id = "box1"></button>
+				<button class = "square" id = "box2"></button>
+				<button class = "square" id = "box3"></button>
+				<button class = "square" id = "box4"></button>
+				<button class = "square" id = "box5"></button>
+				<button class = "square" id = "box6"></button>
+				<button class = "square" id = "box7"></button>
+				<button class = "square" id = "box8"></button>
+				<button class = "square" id = "box9"></button>
+				<div id = "diagonal1Win"></div>
+				<div id = "diagonal2Win"></div>
+				<div id = "column1Win"></div>
+				<div id = "column2Win"></div>
+				<div id = "column3Win"></div>
+				<div id = "row1Win"></div>
+				<div id = "row2Win"></div>
+				<div id = "row3Win"></div>
+				<div id = "winPrompt"></div>
+				<div id = "movePrompt">
+				Your move</div>
+				<div id ="prompt">
+					<p>
+						<button id = "xButton">
+							<i class = "fa fa-star-o"></i>
+						</button>
+						<button id = "oButton">
+							<i class = "fa fa-heart-o"></i>
+						</button>
+					</p>
+				</div>
+				
+				<div id = "modePrompt">
+					<p>
+						<button id = "beginner">rookie</button>
+						<button id = "hard">expert</button>
+					</p>
+				</div>
+				<div id = "playPrompt">
+					<button id = "playButton">Play</button>
+				</div>
+			</div>
+		</div>
+	        
+			
+            
+	<!--<div id = "footerSection">
+		<p> Kyle Fujisawa <i class="fa fa-copyright"></i> All Rights Reserved </p>
+       
+	</div>-->  
+  </div>      
+</main> 
+	
+	<script src="scripts/jquery-3.2.1.js"></script>
+  
+	<script src="scripts/tttmain.js"></script>
+	<script src="scripts/main.js"></script>
+	<script src="scripts/simonmain.js"></script>
+    
+</body>
+	
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+
+    <title>Pomodoro</title>
+    
+    		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+		<link rel ="stylesheet" href="css/style.css" type="text/css"/>
+		<audio id = "sessionBell" src="sounds/sessionBell.mp3"></audio>
+		<audio id = "breakBell" src="sounds/breakBell.mp3"></audio>
+</head>
+<body>
+	<div id = "container">
+		<div id = "mainBox">
+			<div id="sessionBox">
+         <label for = "slider1val" class="sessionLabel">Session time:</label>
+			<br>
+         <input type = "text" id = "slider1val">
+      </div>
+			
+			
+			
+			
+<div id="slider1"></div>
+	
+	<div id ="breakBox">
+         <label for = "min2val" class="breakLabel">Break time:</label>
+		
+					<br>
+		
+         <input type = "text" id = "min2val">
+      
+	<div id="slider2"></div>
+    <button id = "sessionStart">Start</button>
+		
+	<div id ="sessionTimer"></div>
+	<div id ="breakTimer"></div>
+		<button id = "sessionReset">Reset</button>
+		</div>
+			</div>
+		</div>
+		
+		
+    <script src="scripts/jquery-3.2.1.js"></script>
+		<script src="scripts/jquery-ui.js"></script>
+    <script src="scripts/main.js"></script>
+    
+</body>
+</html>

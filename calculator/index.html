@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+
+    <title>Karl's Kalc</title>
+	
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.75">
+    <link rel ="stylesheet" href="css/style.css" type="text/css"/>
+		<link rel ="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Press+Start+2P" rel="stylesheet">
+
+</head>
+
+<body>
+    
+<div id = "container">
+	<div id = "extraCalcShadow"></div>
+	<div id = "cover"></div>
+	<div id = "coverInner"></div>
+	<div id = "latch1"></div>
+	<div id = "latch2"></div>
+	<div id = "calculator">
+		<div id = "mainBorder"></div>
+		<div id = "calcName"><h1>// KARL'S KALC </h1></div>
+		<div id = "screenBorder"></div>
+		<div id = "screen" class= "text-right"></div>
+		<div id = "solarDesignBack"></div>
+		<div id = "solarDesignBackBorder"></div>
+		<div id = "solarDesign">
+			<ul> 
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div id = "numButtons">
+			<ul>
+				<li rel = '1' 
+						id = "calcButton" 
+						class = "numButton1">
+					<h1 style="left:40%">1</h1>
+				</li>
+				<li rel = '2' 
+						id = "calcButton" 
+						class = "numButton2">
+					<h1>2</h1>
+				</li>
+				<li rel = '3' 
+						id = "calcButton" 
+						class = "numButton3">
+					<h1>3</h1>
+				</li>
+				<li rel = '4' 
+						id = "calcButton" 
+						class ="numButton4">
+					<h1>4</h1>
+				</li>
+				<li rel = '5' 
+						id = "calcButton" 
+						class = "numButton5">
+					<h1>5</h1>
+				</li>
+				<li rel = '6' 
+						id = "calcButton" 
+						class = "numButton6">
+					<h1>6</h1>
+				</li>
+				<li rel = '7' 
+						id = "calcButton" 
+						class = "numButton7">
+					<h1>7</h1>
+				</li>
+				<li rel = '8' 
+						id = "calcButton" 
+						class = "numButton8">
+					<h1>8</h1>
+				</li>
+				<li rel = '9' 
+						id = "calcButton" 
+						class = "numButton9">
+					<h1>9</h1>
+				</li>
+				<li rel = '.' 
+						id = "calcButton" 
+						class = "numButtonPoint">
+					<h1 style = "left:46%;">.</h1>
+				</li>
+				<li rel = '0' 
+						id = "calcButton" 
+						class = "numButton0">
+					<h1 style ="left: 32%">0</h1>
+				</li>
+				<li rel = '(' 
+						id = "calcButton" 
+						class = "parenthesisButton leftParenthesisButton smallerButton">
+					<h3> ( </h3>
+				</li>
+				<li rel = ')' 
+						id = "calcButton" 
+						class = "parenthesisButton rightParenthesisButton smallerButton">
+					<h3> ) </h3>
+				</li>
+			</ul>  
+		</div>
+		<div id = "symbolButtons">  
+			<ul> 
+				<li rel = '-' 
+						id = "calcButton" 
+						class = "minusButton">
+					<h1>-</h1>
+				</li>
+				<li rel = '+' 
+						id = "calcButton" 
+						class = "plusButton">
+					<h1>+</h1>
+				</li>
+				<li rel = '*' 
+						id = "calcButton" 
+						class = "multiplyButton">
+					<h1>*</h1>
+				</li>
+				<li rel = '/' 
+						id = "calcButton" 
+						class = "divideButton">
+					<h1>	&#247; </h1>
+				</li>
+				<li rel = '%' 
+						id = "calcButton" 
+						class = "moduloButton">
+					<h3>&#37;</h3>
+				</li>
+			</ul>
+		</div>
+		<div id = "specialityButtons">
+			<div rel = 'sqrt' 
+					 id = "calcButton" 
+					 class = "numClick sqrtButton smallerButton">
+				<h3>&#x0221A;</h3>
+			</div>
+			<div rel = 'log' 
+					 id = "calcButton" 
+					 class = "numClick logButton smallerButton">
+				<h3>log</h3>
+			</div>
+			<div rel = 'ln' 
+					 id = "calcButton" 
+					 class = "numClick lnButton smallerButton">
+				<h3>ln</h3>
+			</div>
+			<div rel = 'pi' 
+					 id = "calcButton" 
+					 class = "pi-e piButton smallerButton">
+				<h3>&#960;</h3>
+			</div>
+			<div rel = 'e' 
+					 id = "calcButton" 
+					 class = "pi-e eButton smallerButton">
+				<h3>e</h3>
+			</div>
+			<div id = "calcButton" 
+					 class = "expButton smallerButton">
+				<h3> x&#x207f; </h3>
+			</div>
+		</div>
+		<div id = "actionButtons">
+			<div id = "calcButton" 
+					 class = "clearButton">
+				<h1>C</h1>
+			</div>
+			<div id = "calcButton" 
+					 class = "equalButton">
+				<h1 style = "left:36%">=</h1>
+			</div>
+			<div id = "calcButton"
+					 class = "backButton">
+				<h1 style = "left:30%"> 
+					<i class = "fa fa-long-arrow-left"></i>
+				</h1>
+			</div>
+		</div>
+  </div>
+</div>  
+    
+    <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/main.js"></script>
+	
+</body>
+
+</html>

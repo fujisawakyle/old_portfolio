@@ -1,0 +1,180 @@
+
+html, body {
+	height:100vh;
+}
+main {
+	background: black;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+}
+#headerShift {
+	height: 70px;
+}
+
+#topBar {
+	width:100%;
+	height:75px;
+	background:#00f5ff;
+	border-bottom: 5px solid white; 
+	position:fixed;
+	display: inline-block;
+	margin:0;
+	top:0;
+	z-index: 4;
+}
+#topBar .logo {
+	position:relative;
+	width:55px;
+	margin-top:6.5px;
+	left:1%;
+	cursor: pointer;
+	transition-property: padding;
+	transition-duration: .1s;
+	transition-timing-function: linear;
+}
+#topBar .logo:hover {
+	padding:0.4%;
+}
+#allGamesTitle {
+	position:absolute;
+	color:white;
+	top:-20%;
+	left:43%;
+	font-family:'Architects Daughter';
+	font-size: 3em;
+	text-decoration: underline;
+}
+#allToggle {
+	border: 3px solid #ffffff;
+	padding: 5px;
+	display: inline-block;
+	margin-left: 2%;
+	font-size: 2em;
+	position:relative;
+	top:8px;
+	font-family:'Architects Daughter';
+	color: #00f5ff;
+	background:black;
+	cursor: pointer;
+	border-radius: 5%;
+}
+#drawer {
+	margin-left: 0;
+	position:fixed;
+	background: #00f5ff;	transform:translate(40%,-20%);		
+	transition:transform 0.1s ease;
+	font-family: 'Glegoo', serif;
+	font-size: 1em;
+	color:black;
+	z-index: 1;
+	border-radius:5%;
+	border: 5px solid white;
+	box-shadow: 1px 1px 5px #7d808d;
+	z-index:4;
+}
+#drawer.open {
+	transform:translate(40%,85%);
+	position:fixed;
+	
+}
+#drawer li{
+	list-style-type: none;
+	padding: .5em;
+	margin:10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:20px;
+	text-align:center;
+	display:inline-block;
+	border: 1px solid black;
+	background: black;
+	color:#00f5ff;
+	border-radius: 3%;
+	transition:transform 0.5s ease;
+	cursor: pointer;
+}
+.gameNav {
+	font-family:'Barrio';
+	font-size: 1em;
+}
+#mainSection {
+	position:relative;
+	width:100%;
+	height:100%;
+	display:inline-flex;
+}
+#allGames {
+	position:relative;
+	
+	margin: auto auto;
+	justify-content: center;
+}
+#allGames li {
+	border: 5px solid white;
+	display: inline-block;
+	margin-left: 1em;
+	margin-top: 1em;
+	margin-right: 1em;
+	text-align:center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+#allGames li:hover {
+	border: 5px solid blue;
+}
+#allGames img {
+	height:300px;
+	width: 450px;
+}
+
+#footerSection{
+  bottom: 0;
+	height: 100px;
+	left:0;
+	position:absolute;
+	width:100%;
+
+}
+.relative {
+	position:relative;
+}
+.absoluteText {
+	position:absolute;
+	color:white;
+	border:4px solid white;
+}
+.simonText {
+	top:20%;
+	left: 58%;
+	padding-left:26px;
+	padding-right:26px;
+	padding-top: -10px;
+	height:180px;
+	width:160px;
+}
+.absoluteText:hover {
+	border:4px solid #00f5ff;
+}
+.TTTText {
+	top:25%;
+	left: 51%;
+	padding-left:35px;
+	padding-right:35px;
+	height:130px;
+	width:202px;
+}
+@media screen and (max-width:550px) {
+
+	
+}
+
+@media screen and (min-width:551px) and (max-width:959px) {
+
+}
+
+@media screen and (min-width:960px) {
+
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+
+    <title>Simon Game</title>
+    
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+	
+		<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bungee+Outline|Electrolize|Orbitron|Russo+One|Ultra|VT323" rel="stylesheet">
+	
+    <link rel ="stylesheet" href="css/style.css" type="text/css"/>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <audio id = "greenSound" src="sounds/C.mp3"></audio>
+		<audio id = "redSound" src="sounds/G.mp3"></audio>
+		<audio id = "blueSound" src="sounds/A.mp3"></audio>
+		<audio id = "yellowSound" src="sounds/B.mp3"></audio>
+		<audio id = "buzzerSound" src="sounds/ch.mp3"></audio>
+	 	<audio id = "winnerSound" src="sounds/winner.wav"></audio>
+		
+</head>
+<body>
+	<div id = "container">
+		<div id = "deviceOuter">
+			
+			
+			
+			<div id = "green" class = color></div>
+			<div id = "red" class = color></div>
+			<div id = "blue" class = color></div>
+			<div id = "yellow" class = color></div>
+			<div id ="buttonDisabler"></div>
+			<div id = "deviceInner2"></div>
+			<div id = "deviceInner1">s<span style="padding:1px;font-size:0.725em; font-weight:500;">I</span>mon</div>
+			<div id = "startButtonShadow"></div>
+			<div id = "startButton"></div>
+			<div id = "startText">start</div>
+			<div id = "strictButtonShadow"></div>
+			<div id = "strictButton" class = "OFF"></div>
+			<div id = "strictText">strict</div>
+			<div id = "strictLight"></div>
+			<div id = "screen"></div>
+		</div>
+	</div>			
+    
+    <script src="scripts/jquery-3.2.1.js"></script>
+    
+    
+    <script src="scripts/main.js"></script>
+    
+</body>
+</html>

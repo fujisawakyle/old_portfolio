@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+
+    <title>Tic Tac Toe</title>
+    
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.8">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Bungee+Outline|Graduate|Julius+Sans+One|Press+Start+2P|VT323" rel="stylesheet">
+    <link rel ="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+</head>
+	
+<body>
+	
+	<div id = "wrapper">	
+		<div id ="container">
+			<div id = "promptOuter"></div>
+			<div id = "mainBox">
+				<div id ="outerBox"></div>
+				<button class = "square" id = "box1"></button>
+				<button class = "square" id = "box2"></button>
+				<button class = "square" id = "box3"></button>
+				<button class = "square" id = "box4"></button>
+				<button class = "square" id = "box5"></button>
+				<button class = "square" id = "box6"></button>
+				<button class = "square" id = "box7"></button>
+				<button class = "square" id = "box8"></button>
+				<button class = "square" id = "box9"></button>
+				<div id = "diagonal1Win"></div>
+				<div id = "diagonal2Win"></div>
+				<div id = "column1Win"></div>
+				<div id = "column2Win"></div>
+				<div id = "column3Win"></div>
+				<div id = "row1Win"></div>
+				<div id = "row2Win"></div>
+				<div id = "row3Win"></div>
+				<div id = "winPrompt"></div>
+				<div id = "movePrompt">
+				Your move</div>
+				<div id ="prompt">
+					<p>
+						<button id = "xButton">
+							<i class = "fa fa-star-o"></i>
+						</button>
+						<button id = "oButton">
+							<i class = "fa fa-heart-o"></i>
+						</button>
+					</p>
+				</div>
+				
+				<div id = "modePrompt">
+					<p>
+						<button id = "beginner">rookie</button>
+						<button id = "hard">expert</button>
+					</p>
+				</div>
+				<div id = "playPrompt">
+					<button id = "playButton">Play</button>
+				</div>
+			</div>
+		</div>
+ 	</div>   
+	
+    <script src="scripts/jquery-3.2.1.js"></script>  
+    <script src="scripts/main.js"></script>
+    
+</body>
+	
+</html>

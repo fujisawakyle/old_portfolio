@@ -1,0 +1,96 @@
+
+	
+	html, body {
+		height:100%;
+	}
+	#container {
+		width:100%;
+		height:100%;
+  	margin: 0 auto;
+  	position:relative;
+		background: #c1b078;
+	}
+	#mainBox {
+		border: 1px solid rgba(0, 0, 0, 0.31);
+		height:300px;
+		width:250px;
+		text-align: center;
+    background: #c1b078;
+    position:absolute;
+    border: 1px solid rgba(0, 0, 0, 0.31);
+		left: 0;
+  	right: 0;
+		top:0;
+		bottom:0;
+  	margin: auto auto;
+	}
+
+	#slider1 {
+	width:90%;;
+	background: #547C8F;
+	margin: auto;
+}
+	#slider2 {
+	width:90%;
+	background: #547C8F;
+	margin: auto;
+}
+	input {
+		text-align: center;
+		background: #c1b078;
+	}
+.ui-slider-horizontal .ui-state-default {
+	background: #C7D3C2;
+}
+	input {
+		border:0px; 
+		width:70px;
+		color:rgb(60, 114, 168); 
+		font-size:4em; 
+		font-weight:bold;
+		
+	}
+	
+
+	button {
+		position:absolute;
+		height:25px;
+		width:50px;
+		left:0;
+		bottom:0;
+		right:0;
+		top:1;
+		margin: auto auto;
+		margin-bottom: 10px;
+		
+		
+	}
+	#sessionTimer, #breakTimer {
+		background: #c1b078;
+		color:rgb(60, 114, 168);
+		font-size:2.3em;
+		height:100px;
+		width:100%;
+		text-align: center;
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		margin:auto auto;
+		
+	}
+@media screen and (max-width: 450px) and (orientation: portrait) {	
+
+}
+
+@media screen and (min-width:451px) and (orientation: portrait) {
+
+
+	
+}
+
+
+@media screen and (orientation: landscape) {
+	
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+
+    <title>Today's local weather</title>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Nunito" rel="stylesheet">
+    <link rel ="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+</head>
+	
+<body>
+	
+<div id = "outsideContainer">
+	<div id = "container">
+		<div id ="weatherBG"> 
+			<div id = "time"></div>
+			<div class = spinner id = "loadMsg">Fetching weather data...</div>
+			<div id = "loadSky"></div>
+			<div id = "daySky"></div>
+			<div id = "nightSky"></div>
+			<img id = "sun" src="graphics/sun.png">
+			<img id = "moon" src="graphics/moon">
+			<img id = "cloud" src="graphics/cloud.png">
+			<img id = "rain" src="graphics/rain.png">
+			<img id = "snow" src="graphics/snow">
+			<img id = "lightning" src="graphics/lightning.png">
+			<img id = "mtn1"  src="graphics/mountain1">
+			<img id = "mtn2" src ="graphics/mountain2">
+			<div id = "ground"></div>
+			<div id = "weekDays">
+				<div id = "first3">
+					<div id = "day1"></div>
+					<div id = "day2"></div>
+					<div id = "day3"></div>
+				</div>
+				<div id = "last3">
+					<div id = "day4"></div>
+					<div id = "day5"></div>
+					<div id = "day6"></div>
+				</div>	
+			</div>
+			<img id = "tree1" class = "tree" src = "graphics/tree">
+			<img id = "tree2" class = "tree" src = "graphics/tree">
+			<img id = "tree3" class = "tree" src = "graphics/tree">
+			<img id = "tree4" class = "tree" src = "graphics/tree">
+			<div id = "todayTemp"></div>
+		</div>
+	</div>
+</div>
+	
+    <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/main2.js"></script>
+    
+</body>
+	
+</html>

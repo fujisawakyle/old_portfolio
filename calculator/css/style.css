@@ -1,0 +1,1594 @@
+
+html,body{
+	height:100%;
+}
+@font-face {
+	font-family: 'digital-7_monomono';
+  src: url('../fonts/digital-7_mono.woff2') format('woff2'),
+ 	url('../fonts/digital-7_mono.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+p {
+    line-height: 23px;
+}
+body {
+  background: #999;
+}
+#container {
+  width: 100%;
+  background: #c1b078;
+	height:100%;
+  margin: 0 auto;
+  position:relative;
+}
+#calcName h1{
+    position:absolute;
+    color:rgba(255, 255, 255, 0.78);
+    top:6.3%;
+    left:7%;
+    font-size: 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+@media screen and (max-width: 450px) and (orientation: portrait) {
+	
+#cover {
+	position:absolute;
+	height: 505px;
+	width: 280px;
+	border: 8px solid rgb(60, 114, 168);
+	border-radius: 15px 15px 360px 360px;
+	background:none;
+	box-shadow: 10px 10px 18px #7d808d;
+	top:-11px;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+}
+#coverInner {
+	position:absolute;
+	height:490px;
+	width:270px;
+	border-radius: 15px 15px 360px 360px;
+	background:#000;
+	top:-16px;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+}
+#extraCalcShadow {
+	position:absolute;
+	height:495px;
+	width:260px;
+	border-radius:15px;
+	box-shadow: 10px 10px 18px #7d808d;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom:0;
+	margin: auto auto;
+}
+#latch1 {
+    position:absolute;
+		height:1.5%;
+		width:4.5%;
+    top:-495px;
+		left:0;
+		right:40px;
+		bottom:0;
+		margin: auto auto;
+    background: rgb(60, 114, 168);
+    border: 1px solid #000;
+}
+#latch2 {
+    position:absolute;
+		height:1.5%;
+		width:4.5%;
+    top:-495px;
+		left:40px;
+		right:0;
+		bottom:0;
+		margin: auto auto;
+    background: rgb(60, 114, 168);
+    border: 1px solid #000;
+}
+#calcName h1{
+    top:6.3%;
+    left:7%;
+}
+#calculator {
+	width:260px;
+	background: #547C8F;
+	height:499px;
+	position:absolute;
+	border-radius: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.31);
+	font-family: 'Orbitron', sans-serif;
+	left: 0;
+  right: 0;
+	top:0;
+	bottom:0;
+  margin: auto auto;
+}
+#mainBorder {
+	width: 93.5%;
+	height:24.75%;
+  position:absolute;
+  top: 1%;
+  left:3.5%;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  border-radius:10px;
+  background-color:rgba(118, 151, 172, 0.82);
+}
+#screen {
+	width: 83.5%;
+	background: #C7D3C2;
+	height:9.25%;
+	position:absolute;
+	top:14.5%;
+	left:8.5%;
+	font-family: 'Orbitron', sans-serif;
+	font-family: 'digital-7_monomono';
+	font-size: 24px;
+	padding-right: 10px;
+}
+#screen p {
+	margin-top:0%;
+}
+#screenBorder {
+	width: 88.5%;
+	height:11.1%;
+	position: absolute;
+	top: 13.5%;
+	left: 6%;
+	border: 1px solid rgba(0, 0, 0, 0.19);
+	border-radius: 2px;
+	background-color:rgba(255, 255, 255, 0.19);
+}
+#solarDesignBack {
+	position:absolute;
+	top:13px;
+	left:26px;
+	background: rgba(90, 78, 78, 0.91);
+	height:28px;
+	width:213px;
+	border-radius:1%;
+	padding:0px 20px 0px 20px;
+}
+#solarDesignBackBorder {
+	position:absolute;
+	top:10px;
+	left:20px;
+	height: 7%;
+	width:87.75%;
+	border: 1px solid rgba(0, 0, 0, 0.19);
+	background-color:rgba(255, 255, 255, 0.19);
+}
+
+#solarDesign li{
+	display:inline-block;
+	list-style: none;
+	height:28px;
+	width:23%;
+	position: relative;
+	margin-top:6%;
+	left: -5.7%;
+	margin-left:0.05px;
+	margin-right:0.05px;
+	background: rgba(71, 60, 66, 0.79);
+	border-radius:1px;
+}
+#solarDesign li #one {
+	position:absolute;
+	left:43%;
+}
+#solarDesign #11 {
+	position:absolute;
+	top: 14%;
+	left: 15%;
+}
+h1{
+  font-size: 20px;
+  position:absolute;
+  top: 30%;
+  left: 40%;
+}
+#symbolButtons h2{
+  font-size: 1em;
+  position:absolute;
+  top: -4%;
+  left: 35%;
+}
+#calcButton {
+	display:inline-block;
+	width: 50px;
+	height: 50px;
+	background: #000;
+	border-radius: 12%;
+	position:absolute;
+	color: #FFFFFF;
+	border: .5px solid rgba(0, 0, 0, 0.75);
+	border-radius: 5px;
+	box-shadow: 2px 3px 0px #4c5852;
+	transition: all ease 0.3s;
+	background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(13, 11, 11, 0.88) 15%);
+}
+#symbolButtons #calcButton {
+	background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgb(87, 76, 76) 15%);
+}
+#calcButton h1{
+	font-size: 1.3em;
+	position:absolute;
+	top: -10%;
+	left: 35%;
+	text-align: center;
+}
+.numButton1 {
+  position: absolute;
+  top: 76.5%;
+  left: 10%;
+}
+#calcButton.numButton1:active {
+	top:77%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton2 {
+	position: absolute;
+	top: 76.5%;
+	left: 31%;
+}
+#calcButton.numButton2:active {
+	top:77%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton3 {
+  position: absolute;
+  top: 76.5%;
+  left: 52%;
+}
+#calcButton.numButton3:active {
+	top:77%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton4 {
+  position: absolute;
+  top:65%;
+  left:10%;
+}
+#calcButton.numButton4:active {
+	top:65.5%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton5 {
+  position: absolute;
+  top: 65%;
+  left: 31%;
+}
+#calcButton.numButton5:active {
+	top:65.5%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton6 {
+	position: absolute;
+	top: 65%;
+	left: 52%;
+}
+#calcButton.numButton6:active {
+	top:65.5%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton7 {
+	position: absolute;
+	top: 53.5%;
+	left:10%;
+}
+#calcButton.numButton7:active {
+	top:54%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton8 {
+	position: absolute;
+	top: 53.5%;
+	left: 31%;
+}
+#calcButton.numButton8:active {
+	top:54%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton9 {
+	position: absolute;
+	top: 53.5%;
+	left: 52%;
+}
+#calcButton.numButton9:active {
+	top:54%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButtonPoint {
+	position: absolute;
+	top: 88%;
+	left: 31%;
+}
+#calcButton.numButtonPoint:active {
+	top:88.5%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.numButton0 {
+	position: absolute;
+	top: 88%;
+	left: 10%;
+}
+#calcButton.numButton0:active {
+	top:88.5%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.minusButton {
+	position: absolute;
+	top: 53.5%;
+	left: 73%;
+}
+#calcButton.minusButton:active {
+	top:54%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.minusButton h1 {
+	left:42%;
+}
+.plusButton {
+	position: absolute;
+	top: 65%;
+	left: 73%;
+}
+#calcButton.plusButton:active {
+	top:65.5%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.plusButton h1 {
+	left:41%;
+}
+.multiplyButton {
+	position: absolute;
+	top: 42%;
+	left: 52%;
+}
+#calcButton.multiplyButton:active {
+	top:42.5%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.multiplyButton h1 {
+	left:41%;
+	top:-1%;
+}
+.moduloButton {
+	position:absolute;
+	top: 42%;
+	left:10%;
+}
+#calcButton.moduloButton:active {
+	top:42.5%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.moduloButton h3 {
+	top:-8%;
+}	
+.divideButton {
+	position: absolute;
+	top: 42%;
+	left: 31%;
+}
+#calcButton.divideButton:active {
+	top:42.5%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.divideButton h1 {
+	left:41%; 
+	top:-13%;
+}
+#calcButton.clearButton {
+	position: absolute;
+	top: 42%;
+	left: 73%;
+	background:#FF3131;
+	background: linear-gradient(to bottom, rgb(242, 155, 136) 0%,rgba(219, 39, 0, 0.89) 15%);
+}
+#calcButton.clearButton:active {
+	top:42.5%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.sqrtButton {
+	position: absolute;
+	top:34.5%;
+	left:73%;
+}
+#calcButton.sqrtButton:active {
+	top:35%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.sqrtButton h3 {
+	font-family: Courier; 
+	left:35%;
+}
+.piButton {
+	position: absolute;
+	top:34.5%;
+	left:10%;
+}
+#calcButton.piButton:active {
+	top:35%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.piButton h3 {
+	font-family: Times; 
+	left:33%; 
+	font-size: 1.1em;
+	top:-88%;
+}
+.leftParenthesisButton {
+	position: absolute;
+	top:34.5%;
+	left:31%;
+}
+#calcButton.leftParenthesisButton:active {
+	top:35%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.leftParenthesisButton h3{
+	font-size: 1.1em; 
+	left:38%; 
+	top:-75%;
+}
+.rightParenthesisButton {
+	position: absolute;
+	top:34.5%;
+	left:52%;
+}
+#calcButton.rightParenthesisButton:active {
+	top:35%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.rightParenthesisButton h3 {
+	font-size: 1.1em; 
+	left:38%; 
+	top:-75%;
+}
+.expButton {
+	position: absolute;
+	top: 27%;
+	left:52%;
+}
+#calcButton.expButton:active {
+	top:27.5%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.logButton {
+	position: absolute;
+	top: 27%;
+	left: 31%;
+}
+#calcButton.logButton:active {
+	top:27.5%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.logButton h3 {
+	font-size: 0.8em; 
+	left:22%; 
+	top:-65%;
+}
+.lnButton {
+	position: absolute;
+	top: 27%;
+	left:10%;
+}
+#calcButton.lnButton:active {
+	top:27.5%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.lnButton h3 {
+	font-size: 0.8em; 
+	top:-65%;
+}
+.eButton {
+	position: absolute;
+	top: 27%;
+	left:73%;
+}
+#calcButton.eButton:active {
+	top:27.5%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.eButton h3 {
+	left:31%; 
+	top:-69%;
+}
+.backButton {
+	position: absolute;
+	top: 88%;
+	left:52%;
+}
+#calcButton.backButton:active {
+	top:88.5%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.equalButton{
+	position:absolute;
+	top: 76.5%;
+	left: 73%;
+	height: 110px;
+}
+#calcButton.equalButton:active {
+	top:77%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.smallerButton{
+	height:5%;
+	background: linear-gradient(to bottom, rgb(149, 165, 219) 0%,rgba(60, 114, 168, 0.94) 15%);
+}
+#calcButton h3 {
+	font-size: 0.9em;
+	text-align: center;
+	padding: 3px;
+	position: absolute;
+	top:-70%;
+	left:30%;
+}
+}
+
+@media screen and (min-width:451px) and (orientation: portrait) {
+
+
+#cover {
+	height:550px;
+	width: 330px;
+}
+#cover {
+	position:absolute;
+	border: 8px solid rgb(60, 114, 168);
+	border-radius: 15px 15px 360px 360px;
+	background:none;
+	box-shadow: 10px 10px 18px #7d808d;
+	top:-11px;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+}
+#coverInner {
+	position:absolute;
+	height:535px;
+	width: 319px;
+	border-radius: 15px 15px 360px 360px;
+	background:#000;
+	top:-16px;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+}
+#extraCalcShadow {
+	position:absolute;
+	height: 540px;
+	width: 300px;
+	border-radius:15px;
+	top:12%;
+	box-shadow: 10px 10px 18px #7d808d;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom:0;
+	margin: auto auto;
+}
+#latch1 {
+	position:absolute;
+	height: 10px;
+	width:20px;
+	top:-541px;
+	left:0;
+	right:40px;
+	bottom:0;
+	margin: auto auto;
+	background: rgb(60, 114, 168);
+	border: 1px solid #000;
+}
+#latch2 {
+	position:absolute;
+	height: 10px;
+	width:20px;
+	top:-541px;
+	left:40px;
+	right:0;
+	bottom:0;
+	margin: auto auto;
+	background: rgb(60, 114, 168);
+	border: 1px solid #000;
+}
+#calcName h1{
+	top:6.3%;
+	left:7%;
+}
+#calculator {
+	width: 300px;
+	background: #547C8F;
+	height:540px;
+	position:absolute;
+	top: 17%;
+	top: 12%;
+	left: 35%;
+	border-radius: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.31);
+	font-family: 'Orbitron', sans-serif;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom:0;
+	margin: auto auto;
+}
+#mainBorder {
+  width: 280px;
+  height:133px;
+  position:absolute;
+  top: 1%;
+  left:3.5%;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  border-radius:10px;
+  background-color:rgba(118, 151, 172, 0.82);
+}
+#screen {
+	width: 250px;
+	background: #C7D3C2;
+	height: 50px;
+	position:absolute;
+	top:14.5%;
+	left:8.5%;
+	font-family: 'Orbitron', sans-serif;
+	font-family: 'digital-7_monomono';
+	font-size: 28px;
+	padding-right: 10px;
+}
+#screen p {
+	margin-top:2%;
+}
+#screenBorder {
+	width: 265px;
+	height: 60px;
+	position: absolute;
+	top: 13.5%;
+	left: 6%;
+	border: 1px solid rgba(0, 0, 0, 0.19);
+	border-radius: 2px;
+	background-color:rgba(255, 255, 255, 0.19);
+}
+#solarDesignBack {
+	position:absolute;
+	top:14px;
+	left:27px;
+	background: rgba(90, 78, 78, 0.91);
+	height:30px;
+	width:250px;
+	border-radius:1%;
+	padding:0px 20px 0px 20px;
+}
+#solarDesignBackBorder {
+	position:absolute;
+	top:10px;
+	left:20px;
+	height:38px;
+	width:262px;
+	border: 1px solid rgba(0, 0, 0, 0.19);
+	background-color:rgba(255, 255, 255, 0.19);
+}
+#solarDesign li{
+	display:inline-block;
+	list-style: none;
+	height:30px;
+	width:60px;
+	position: relative;
+	margin-top:5.5%;
+	left: -5.7%;
+	margin-left:0.05px;
+	margin-right:0.05px;
+	background: rgba(71, 60, 66, 0.79);
+	border-radius:1px;
+}
+#solarDesign li #one {
+	position:absolute;
+	left:43%;
+}
+#solarDesign #11 {
+	position:absolute;
+	top: 14%;
+	left: 15%;
+}
+h1{
+  font-size: 20px;
+  position:absolute;
+  top: 30%;
+  left: 40%;
+}
+#symbolButtons h2{
+  font-size: 15px;
+  position:absolute;
+  top: -4%;
+  left: 35%;
+}
+#calcButton {
+	display:inline-block;
+	width: 50px;
+	height: 50px;
+	background: #000;
+	color:#fff;
+	border-radius: 12%;
+	position:absolute;
+	color: #FFFFFF;
+	border: .5px solid rgba(0, 0, 0, 0.75);
+	border-radius: 5px;
+	box-shadow: 2px 3px 0px #4c5852;
+	transition: all ease 0.3s;
+	background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(13, 11, 11, 0.88) 15%);
+}
+#symbolButtons #calcButton {
+	background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgb(87, 76, 76) 15%);
+}
+#calcButton h1{
+	font-size: 20px;
+	position:absolute;
+	top: -10%;
+	left: 35%;
+	text-align: center;
+}
+.numButton1 {
+  position: absolute;
+  top: 76.5%;
+  left: 10%;
+}
+#calcButton.numButton1:active {
+	top:77%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton2 {
+	position: absolute;
+	top: 76.5%;
+	left: 31%;
+}
+#calcButton.numButton2:active {
+	top:77%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton3 {
+  position: absolute;
+  top: 76.5%;
+  left: 52%;
+}
+#calcButton.numButton3:active {
+	top:77%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton4 {
+  position: absolute;
+  top:65%;
+  left:10%;
+}
+#calcButton.numButton4:active {
+	top:65.5%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton5 {
+  position: absolute;
+  top: 65%;
+  left: 31%;
+}
+#calcButton.numButton5:active {
+	top:65.5%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton6 {
+	position: absolute;
+	top: 65%;
+	left: 52%;
+}
+#calcButton.numButton6:active {
+	top:65.5%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton7 {
+	position: absolute;
+	top: 53.5%;
+	left:10%;
+}
+#calcButton.numButton7:active {
+	top:54%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton8 {
+	position: absolute;
+	top: 53.5%;
+	left: 31%;
+}
+#calcButton.numButton8:active {
+	top:54%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton9 {
+	position: absolute;
+	top: 53.5%;
+	left: 52%;
+}
+#calcButton.numButton9:active {
+	top:54%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButtonPoint {
+	position: absolute;
+	top: 88%;
+	left: 31%;
+}
+#calcButton.numButtonPoint:active {
+	top:88.5%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.numButton0 {
+	position: absolute;
+	top: 88%;
+	left: 10%;
+}
+#calcButton.numButton0:active {
+	top:88.5%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.minusButton {
+	position: absolute;
+	top: 53.5%;
+	left: 73%;
+}
+#calcButton.minusButton:active {
+	top:54%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.minusButton h1 {
+	left:41%;
+}
+.plusButton {
+	position: absolute;
+	top: 65%;
+	left: 73%;
+}
+#calcButton.plusButton:active {
+	top:65.5%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.plusButton h1 {
+	left:41%;
+}
+.multiplyButton {
+	position: absolute;
+	top: 42%;
+	left: 52%;
+}
+#calcButton.multiplyButton:active {
+	top:42.5%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.multiplyButton h1 {
+	left:41%;
+	top:-1%;
+}
+.moduloButton {
+	position:absolute;
+	top: 42%;
+	left:10%;
+}
+#calcButton.moduloButton:active {
+	top:42.5%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.moduloButton h3 {
+	top:-10%;
+}	
+.divideButton {
+	position: absolute;
+	top: 42%;
+	left: 31%;
+}
+#calcButton.divideButton:active {
+	top:42.5%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.divideButton h1 {
+	left:41%; 
+	top:-13%;
+}
+#calcButton.clearButton {
+	position: absolute;
+	top: 42%;
+	left: 73%;
+	background:#FF3131;
+	background: linear-gradient(to bottom, rgb(242, 155, 136) 0%,rgba(219, 39, 0, 0.89) 15%);
+}
+#calcButton.clearButton:active {
+	top:42.5%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.sqrtButton {
+	position: absolute;
+	top:34.5%;
+	left:73%;
+}
+#calcButton.sqrtButton:active {
+	top:35%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.sqrtButton h3 {
+	font-family: Courier; 
+	left:35%;
+}
+.piButton {
+	position: absolute;
+	top:34.5%;
+	left:10%;
+}
+#calcButton.piButton:active {
+	top:35%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.piButton h3 {
+	font-family: Times; 
+	left:33%; 
+	font-size: 1.1em;
+	top:-66%;
+}
+.leftParenthesisButton {
+	position: absolute;
+	top:34.5%;
+	left:31%;
+}
+#calcButton.leftParenthesisButton:active {
+	top:35%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.leftParenthesisButton h3{
+	font-size: 1.1em; 
+	left:40%; 
+	top:-63%;
+}
+.rightParenthesisButton {
+	position: absolute;
+	top:34.5%;
+	left:52%;
+}
+#calcButton.rightParenthesisButton:active {
+	top:35%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.rightParenthesisButton h3 {
+	font-size: 1.1em; 
+	left:40%; 
+	top:-63%;
+}
+.expButton {
+	position: absolute;
+	top: 27%;
+	left:52%;
+}
+#calcButton.expButton:active {
+	top:27.5%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.logButton {
+	position: absolute;
+	top: 27%;
+	left: 31%;
+}
+#calcButton.logButton:active {
+	top:27.5%;
+	left:31.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.logButton h3 {
+	font-size: 0.8em; 
+	left:24%; 
+	top:-55%;
+}
+.lnButton {
+	position: absolute;
+	top: 27%;
+	left:10%;
+}
+#calcButton.lnButton:active {
+	top:27.5%;
+	left:10.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.lnButton h3 {
+	font-size: 0.8em; 
+	top:-55%;
+	left:33%;
+}
+.eButton {
+	position: absolute;
+	top: 27%;
+	left:73%;
+}
+#calcButton.eButton:active {
+	top:27.5%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.eButton h3 {
+	left:31%; 
+	top:-66%;
+}
+.backButton {
+	position: absolute;
+	top: 88%;
+	left:52%;
+}
+#calcButton.backButton:active {
+	top:88.5%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.equalButton{
+	position:absolute;
+	top: 76.5%;
+	left: 73%;
+	height: 110px;
+}
+#calcButton.equalButton:active {
+	top:77%;
+	left:73.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.smallerButton{
+	height:28px;
+	background: linear-gradient(to bottom, rgb(149, 165, 219) 0%,rgba(60, 114, 168, 0.94) 15%);
+}
+#calcButton h3 {
+	font-size: 1em;
+	text-align: center;
+	padding: 3px;
+	position: absolute;
+	top:-60%;
+	left:30%;
+}
+}
+
+
+@media screen and (orientation: landscape) {
+
+#calcName h1{
+	top:15.3%;
+	left:4%;
+}
+#calculator {
+	width: 425px;
+	background: #547C8F;
+	height:280px;
+	position:absolute;
+	border-radius: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.31);
+	font-family: 'Orbitron', sans-serif;
+	box-shadow: 10px 10px 18px #7d808d;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom:0;
+	margin: auto auto;
+}
+#mainBorder {
+  width: 205px;
+  height:148px;
+  position:absolute;
+  top: 3.5%;
+  left:2%;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  border-radius:10px;
+  background-color:rgba(118, 151, 172, 0.82);
+}
+#screen {
+	width: 190px;
+	background: #C7D3C2;
+	height: 50px;
+	position:absolute;
+	top:32.5%;
+	left:4%;
+	font-family: 'Orbitron', sans-serif;
+	font-family: 'digital-7_monomono';
+	font-size: 23px;
+	padding-right: 10px;
+}
+#screen p {
+	margin-top:2%;
+}
+#screenBorder {
+	width: 197px;
+	height: 60px;
+	position: absolute;
+	top: 30.5%;
+	left: 3%;
+	border: 1px solid rgba(0, 0, 0, 0.19);
+	border-radius: 2px;
+	background-color:rgba(255, 255, 255, 0.19);
+}
+#solarDesignBack {
+	position:absolute;
+	top:20px;
+	left:20px;
+	background: rgba(90, 78, 78, 0.91);
+	height:30px;
+	width:182px;
+	border-radius:1%;
+	padding:0px 20px 0px 20px;
+}
+#solarDesignBackBorder {
+	position:absolute;
+	top:16px;
+	left:17px;
+	height:38px;
+	width:189px;
+	border: 1px solid rgba(0, 0, 0, 0.19);
+	background-color:rgba(255, 255, 255, 0.19);
+}
+#solarDesign li{
+	display:inline-block;
+	list-style: none;
+	height:30px;
+	width:43px;
+	position: relative;
+	margin-top:5.25%;
+	left: -5.25%;
+	margin-left:0.05px;
+	margin-right:0.05px;
+	background: rgba(71, 60, 66, 0.79);
+	border-radius:1px;
+}
+#solarDesign li #one {
+	position:absolute;
+	left:43%;
+}
+#solarDesign #11 {
+	position:absolute;
+	top: 14%;
+	left: 15%;
+}
+h1{
+  font-size: 20px;
+  position:absolute;
+  top: 30%;
+  left: 40%;
+}
+#symbolButtons h2{
+  font-size: 15px;
+  position:absolute;
+  top: -4%;
+  left: 35%;
+}
+#calcButton {
+	display:inline-block;
+	width: 45px;
+	height: 45px;
+	background: #000;
+	color:#fff;
+	border-radius: 12%;
+	position:absolute;
+	color: #FFFFFF;
+	border: .5px solid rgba(0, 0, 0, 0.75);
+	border-radius: 5px;
+	box-shadow: 2px 3px 0px #4c5852;
+	transition: all ease 0.3s;
+	background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(13, 11, 11, 0.88) 15%);
+}
+#symbolButtons #calcButton {
+	background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgb(87, 76, 76) 15%);
+}
+#calcButton h1{
+	font-size: 20px;
+	position:absolute;
+	top: -18%;
+	left: 31%;
+	text-align: center;
+}
+.numButton1 {
+	position: absolute;
+	top: 59.5%;
+  left: 52%;
+}
+#calcButton.numButton1:active {
+	top:60%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton2 {
+	position: absolute;
+	top: 59.5%;
+	left: 64%;
+}
+#calcButton.numButton2:active {
+	top:60%;
+	left:64.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton3 {
+  position: absolute;
+  top: 59.5%;
+  left: 75.75%;
+}
+#calcButton.numButton3:active {
+	top:60%;
+	left:76.25%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton4 {
+  position: absolute;
+  top:41%;
+  left:52%;
+}
+#calcButton.numButton4:active {
+	top:41.5%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton5 {
+  position: absolute;
+  top: 41%;
+  left: 64%;
+}
+#calcButton.numButton5:active {
+	top:41.5%;
+	left:64.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton6 {
+	position: absolute;
+	top: 41%;
+	left: 75.75%;
+}
+#calcButton.numButton6:active {
+	top:41.5%;
+	left:76.25%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton7 {
+	position: absolute;
+	top: 22.5%;
+	left:52%;
+}
+#calcButton.numButton7:active {
+	top:23%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton8 {
+	position: absolute;
+	top: 22.5%;
+	left: 64%;
+}
+#calcButton.numButton8:active {
+	top:23%;
+	left:64.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButton9 {
+	position: absolute;
+	top: 22.5%;
+	left: 75.75%;
+}
+#calcButton.numButton9:active {
+	top:23%;
+	left:76.25%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.numButtonPoint {
+	position: absolute;
+	top: 78.5%;
+	left: 64%;
+}
+#calcButton.numButtonPoint:active {
+	top:79%;
+	left:64.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.numButton0 {
+	position: absolute;
+	top: 78.5%;
+	left: 52%;
+}
+#calcButton.numButton0:active {
+	top:79%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.minusButton {
+	position: absolute;
+	top: 22.5%;
+	left: 87.5%;
+}
+#calcButton.minusButton:active {
+	top:23%;
+	left:88%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.minusButton h1 {
+	left:38%;
+}
+.plusButton {
+	position: absolute;
+	top: 41%;
+	left: 87.5%;
+}
+#calcButton.plusButton:active {
+	top:41.5%;
+	left:88%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.plusButton h1 {
+	left:41%;
+}
+.multiplyButton {
+	position: absolute;
+	top: 4%;
+	left: 75.75%;
+}
+#calcButton.multiplyButton:active {
+	top: 4.5%;
+	left:76.25%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.multiplyButton h1 {
+	left:41%;
+	top:-10%;
+}
+.moduloButton {
+	position:absolute;
+	top: 4%;
+	left:52%;
+}
+#calcButton.moduloButton:active {
+	top:4.5%;
+	left:52.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.moduloButton h3 {
+	top:-16%;
+	left:25%;
+}	
+.divideButton {
+	position: absolute;
+	top: 4%;
+	left: 64%;
+}
+#calcButton.divideButton:active {
+	top:4.5%;
+	left:64.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.divideButton h1 {
+	left:39%; 
+	top:-20%;
+}
+#calcButton.clearButton {
+	position: absolute;
+	top: 4%;
+	left: 87.5%;
+	background: linear-gradient(to bottom, rgb(242, 155, 136) 0%,rgba(219, 39, 0, 0.89) 15%);
+}
+#calcButton.clearButton:active {
+	top:4.5%;
+	left:88%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+.sqrtButton {
+	position: absolute;
+	top:78.5%;
+	left:39.25%;
+}
+#calcButton.sqrtButton:active {
+	top:79%;
+	left:39.75%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.sqrtButton h3 {
+	font-family: Courier; 
+	left:35%;
+	top:-20%
+}
+.piButton {
+	position: absolute;
+	top:78.5%;
+	left:3%;
+}
+#calcButton.piButton:active {
+	top:79%;
+	left:3.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.piButton h3 {
+	font-family: Times; 
+	left:28%; 
+	font-size: 1.6em;
+	top:-35%;
+}
+.leftParenthesisButton {
+	position: absolute;
+	top:78.5%;
+	left:15.25%;
+}
+#calcButton.leftParenthesisButton:active {
+	top:79%;
+	left:15.75%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.leftParenthesisButton h3{
+	font-size: 1.4em; 
+	left:38%; 
+	top:-20%;
+}
+.rightParenthesisButton {
+	position: absolute;
+	top:78%;
+	left:27.25%;
+}
+#calcButton.rightParenthesisButton:active {
+	top:79%;
+	left:27.75%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.rightParenthesisButton h3 {
+	font-size: 1.4em; 
+	left:38%; 
+	top:-20%;
+}
+.expButton {
+	position: absolute;
+	top: 59.5%;
+	left:27.25%;
+}
+#calcButton.expButton:active {
+	top:60%;
+	left:27.75%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.expButton h3 {
+	top:-18%;
+	left: 28%;
+	font-size: 1.2em;
+}
+.logButton {
+	position: absolute;
+	top: 59.5%;
+	left: 15.25%;
+}
+#calcButton.logButton:active {
+	top:60%;
+	left:15.75%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.logButton h3 {
+	font-size: 1em; 
+	left:16%; 
+	top:-16%;
+}
+.lnButton {
+	position: absolute;
+	top: 59.5%;
+	left:3%;
+}
+#calcButton.lnButton:active {
+	top:60%;
+	left:3.5%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.lnButton h3 {
+	font-size: 1em; 
+	top:-16%;
+	left:28%;
+}
+.eButton {
+	position: absolute;
+	top: 59.5%;
+	left:39.25%;
+}
+#calcButton.eButton:active {
+	top:60%;
+	left:39.75%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.eButton h3 {
+	left:31%; 
+	top:-17%;
+	font-size: 1.2em;
+}
+.backButton {
+	position: absolute;
+	top: 78.5%;
+	left:75.75%;
+}
+#calcButton.backButton:active {
+	top:79%;
+	left:76.25%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.equalButton{
+	position:absolute;
+	top: 59.5%;
+	left: 87.5%;
+	height: 100px;
+}
+#calcButton.equalButton:active {
+	top:60%;
+	left:88%;
+	box-shadow: 0px 0px 0px #4c5852;
+}
+#calcButton.smallerButton{
+	background: linear-gradient(to bottom, rgb(149, 165, 219) 0%,rgba(60, 114, 168, 0.94) 15%);
+}
+#calcButton h3 {
+	font-size: 15px;
+	text-align: center;
+	padding: 3px;
+	position: absolute;
+	top:%;
+	left:30%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
