@@ -31,7 +31,7 @@ $(document).ready(function () {
 		//slider minutes into seconds
 		slider1Count = $("#slider1").slider("value") * 60;
 		clearInterval(sessionTimer);
-		sessionTimer = setInterval(timer, 10);
+		sessionTimer = setInterval(timer, 1000);
 		function timer() {
 			if (slider1Count % 60 >= 10) {
 				$('#sessionTimer').html("Session Time:" + "<br>" + Math.floor(slider1Count / 60) + ":" + slider1Count % 60);
